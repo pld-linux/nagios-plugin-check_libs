@@ -17,7 +17,6 @@ URL:		http://svn.noreply.org/svn/weaselutils/trunk/
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.654
 BuildRequires:	sed >= 4.0
-# for reading .conf
 Requires:	lsof
 Suggests:	perl-YAML-Syck
 BuildArch:	noarch
@@ -35,7 +34,10 @@ running processes.
 cp -p %{SOURCE0} %{plugin}.pl
 cp -p %{SOURCE1} %{plugin}.conf
 
-%{__sed} -i -e 's,/etc/nagios/check-libs.conf,%{_sysconfdir}/%{plugin}.conf,' %{plugin}.pl
+%{__sed} -i -e '
+	s,/etc/nagios/check-libs.conf,%{_sysconfdir}/%{plugin}.conf,
+	s,libyaml-syck-perl,perl-YAML-Syck,
+' %{plugin}.pl
 
 %install
 rm -rf $RPM_BUILD_ROOT
