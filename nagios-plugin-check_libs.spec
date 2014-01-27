@@ -18,7 +18,7 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.654
 BuildRequires:	sed >= 4.0
 Requires:	lsof
-Suggests:	perl-YAML-Syck
+Suggests:	perl-YAML-Syck >= 0.97
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
