@@ -1,5 +1,5 @@
 %define		svnrev	520
-%define		rel		1
+%define		rel		2
 %define		plugin	check_libs
 %include	/usr/lib/rpm/macros.perl
 Summary:	Nagios plugin to check inexistent libraries in running processes
