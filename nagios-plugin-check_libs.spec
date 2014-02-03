@@ -10,8 +10,7 @@ License:	BSD
 Group:		Networking
 Source0:	http://svn.noreply.org/svn/weaselutils/trunk/nagios-check-libs
 # Source0-md5:	fea660b5fb4cf5759b7fc47084c94d48
-Source1:	http://svn.noreply.org/svn/weaselutils/trunk/nagios-check-libs.conf
-# Source1-md5:	dae6d27674df15d9647c58606e3c5da8
+Source1:	nagios-check-libs.conf
 Source2:	%{plugin}.cfg
 URL:		http://svn.noreply.org/svn/weaselutils/trunk/
 BuildRequires:	rpm-perlprov >= 4.1-13
