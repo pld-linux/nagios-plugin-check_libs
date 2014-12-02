@@ -8,8 +8,8 @@ Version:	0.1
 Release:	0.%{svnrev}.%{rel}
 License:	BSD
 Group:		Networking
-Source0:	http://svn.noreply.org/svn/weaselutils/trunk/nagios-check-libs
-# Source0-md5:	fea660b5fb4cf5759b7fc47084c94d48
+# http://svn.noreply.org/svn/weaselutils/trunk/nagios-check-libs
+Source0:	nagios-check-libs
 Source1:	nagios-check-libs.conf
 Source2:	%{plugin}.cfg
 URL:		http://svn.noreply.org/svn/weaselutils/trunk/
