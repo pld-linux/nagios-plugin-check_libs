@@ -1,18 +1,16 @@
-%define		svnrev	520
-%define		rel		2
 %define		plugin	check_libs
 %include	/usr/lib/rpm/macros.perl
 Summary:	Nagios plugin to check inexistent libraries in running processes
 Name:		nagios-plugin-%{plugin}
-Version:	0.1
-Release:	0.%{svnrev}.%{rel}
+Version:	0.2012042101
+Release:	1
 License:	BSD
 Group:		Networking
-# http://svn.noreply.org/svn/weaselutils/trunk/nagios-check-libs
+# https://www.palfrader.org/gitweb/?p=tools/monitoring.git;a=blob_plain;f=nagios-checks/nagios-check-libs;hb=HEAD
 Source0:	nagios-check-libs
 Source1:	nagios-check-libs.conf
 Source2:	%{plugin}.cfg
-URL:		http://svn.noreply.org/svn/weaselutils/trunk/
+URL:		https://www.palfrader.org/gitweb/?p=tools/monitoring.git
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.654
 BuildRequires:	sed >= 4.0
