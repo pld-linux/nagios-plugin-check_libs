@@ -1,5 +1,4 @@
 %define		plugin	check_libs
-%include	/usr/lib/rpm/macros.perl
 Summary:	Nagios plugin to check inexistent libraries in running processes
 Name:		nagios-plugin-%{plugin}
 Version:	0.2012042101
